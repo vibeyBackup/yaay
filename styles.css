@@ -1,0 +1,173 @@
+/* Importing a trendy font */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
+body {
+  font-family: "Patrick Hand SC", cursive;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  text-align: center;
+  color: #3b2200;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #854d8c;
+  text-shadow: 3px 3px 10px rgba(148, 187, 233, 0.4);
+  margin-bottom: 10px;
+}
+
+/* Subheadings */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5c3566;
+  margin-top: 25px;
+}
+
+/* Text Styling */
+p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5c3566;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.container {
+  margin-top: 5vh;
+  padding: 20px;
+}
+
+/* Dancing Unicorn GIF */
+.dancing-unicorn {
+  width: 220px;
+  margin: 1px auto;
+}
+
+/* Button Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Button Wrapper */
+.btn-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Boxy ShadCN-style Buttons */
+.btn {
+  font-family: "Patrick Hand SC", cursive;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background: #71a9e8;
+  border-radius: 8px; /* Boxy edges */
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  box-shadow: 0px 3px 10px rgba(148, 187, 233, 0.3);
+}
+
+/* Hover Effect */
+.btn:hover {
+  background: #94bbe9;
+  border-color: #5c3566; /* Slight outline effect */
+  box-shadow: 0px 5px 15px rgba(148, 187, 233, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Peekaboo Animal Effect */
+.animal {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Show animal on hover */
+.btn-container:hover .animal {
+  opacity: 1;
+  bottom: 67px;
+}
+
+/* Confetti Button (Slightly Different Look) */
+.magic-btn {
+  background: #5c3566;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 9px; /* Boxy effect */
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-weight: 700;
+  margin: 30px auto;
+  display: inline-block;
+  box-shadow: 0px 3px 10px rgba(238, 174, 202, 0.3);
+}
+
+.magic-btn:hover {
+  background: #854d8c;
+  border-color: #94bbe9;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(148, 187, 233, 0.4);
+}
+
+/* List Styling (No Bullet Points) */
+ul {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #5c3566;
+}
+
+.gif-container {
+  position: relative;
+  display: inline-block;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 150px;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.arrow-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b2200;
+  margin-top: 1px;
+  text-shadow: 2px 2px 5px rgba(238, 174, 202, 0.4);
+}
